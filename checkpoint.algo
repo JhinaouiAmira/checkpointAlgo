@@ -1,0 +1,20 @@
+ALGORITHM read_sentence
+VAR
+    i,nb_v,nb_m:INTEGER;
+    c:CHAR;
+    s:STRING;
+
+BEGIN
+    i:=0;
+    nb_v:=0;
+    nb_m:=1;
+    WHILE (s[i]<>".") DO
+    IF (s[i]="a" or s[i]="e" or s[i]="i" or s[i]="u" or s[i]="o" or s[i]="y") THEN
+      num_v:=num_v+1
+      END_IF
+    IF(s[i]=" ") THEN
+       num_m:=num_m+1
+    END_IF
+     i:=i+1;
+read(s)
+END
